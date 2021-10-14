@@ -123,7 +123,7 @@ function App() {
         formatdisplayTime={formatdisplayTime} />
       </div>
 
-      <div className="timer-displayTime">
+      <div className="timer-display">
         <h1 id="timer-label">{onBreak ? "Break" : "Session"}</h1>
         <h1 id="time-left">{formatdisplayTime(displayTime)}</h1>
         <button id="start_stop" className="btn-large teal lighten-2" onClick={controlTime}>
