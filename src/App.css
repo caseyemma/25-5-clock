@@ -1,0 +1,93 @@
+:root {
+  --pink: #ebbab9;
+  --grey: #c9c5ba;
+  --green: #97b1a6;
+  --blue: #698996;
+  --teal: #79afb6;
+}
+body {
+  background-color: var(--blue);
+  color: white;
+}
+
+.center-align h1{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.dual-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.break-time-set {
+  display: grid;
+  grid-template-columns: 50px 100px 50px;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "title title title"
+                       "down-arrow time up-arrow";
+  justify-items: center;
+  align-items: center;
+}
+
+#break-label {
+  grid-area: title;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#break-increment {
+  grid-area: up-arrow;
+}
+
+#break-decrement {
+  grid-area: down-arrow;
+}
+
+#break-length {
+  grid-area: time;
+}
+
+#session-label {
+  grid-area: title;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#session-increment {
+  grid-area: up-arrow;
+}
+
+#session-decrement {
+  grid-area: down-arrow;
+}
+
+#session-length {
+  grid-area: time;
+}
+
+.timer-display {
+  background-color:var(--pink);
+  padding: 20px;
+  border: 1px solid white;
+  margin: 50px;
+}
+
+#timer-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.btn-large {
+  margin: 20px;
+}
