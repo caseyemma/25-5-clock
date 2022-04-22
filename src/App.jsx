@@ -104,7 +104,7 @@ function App() {
 
   return (
     <div className='center-align'>
-      <h1>5 + 5 Clock</h1>
+      <h1>25 + 5 Clock</h1>
       <div className="dual-container">
 
       <Length
